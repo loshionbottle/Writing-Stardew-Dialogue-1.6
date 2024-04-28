@@ -14,4 +14,5 @@ Use the branches drop down (above) to switch between each area or just click the
 - OFFICIAL STARDEW DIALOGUE WIKI: https://stardewvalleywiki.com/Modding:Dialogue
 - CONTENT PATCHER WIKI: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
 
-### All Resources here are FREE to use and should stay that way. I do not intend for myself or any others to profit off of this. 
+
+*All Resources here are FREE to use and should stay that way. I do not intend for myself or any others to profit off of this.*
