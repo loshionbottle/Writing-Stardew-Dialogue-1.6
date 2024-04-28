@@ -10,9 +10,10 @@ Use the branches drop down (above) to switch between each area or just click the
 
 [Code Skeletons](https://github.com/loshionbottle/Writing-Stardew-Dialogue/blob/Code-Skeletons/README.md) - Skeletons for both Non-Marriagable and Marriagable NPCs. Designed with Beginners in mind, so there's a lot of inlines to delete. 
 
+
+*All Resources here are FREE to use and should stay that way. I do not intend for myself or any others to profit off of this.*
+
+
 ## Other Resources
 - OFFICIAL STARDEW DIALOGUE WIKI: https://stardewvalleywiki.com/Modding:Dialogue
 - CONTENT PATCHER WIKI: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
-
-
-*All Resources here are FREE to use and should stay that way. I do not intend for myself or any others to profit off of this.*
