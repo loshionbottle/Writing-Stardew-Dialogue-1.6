@@ -1,5 +1,14 @@
+# Welcome to WritingContent.md 
+Author's Note: I am by no means a professional at creating dialogue. However, I have accumulated a lot of knowledge that might benefit others like myself who want to create a dialogue pack but are unsure where to start!
+
 # Contents
-- [Creating a Modpack](#creating-a-modpack)
+- [Creating a Dialogue Modpack](#creating-a-dialogue-modpack)
+- [Dialogue Keys](#dialogue-keys)
+  	- [Generic Dialogue](#generic-dialogue)
+  	- [Location Dialogue](#location-dialogue)
+  	- [Special Dialogue](#special-dialogue)
+  	- [Marriage Dialogue](#marriage-dialogue)
+  	- [Data Directory & Other Dialogue Locations](#data-directory-and-other-dialogue-locations)
 - [Formatting Cheatsheet](#cheatsheet)
   	- [Formatting](#formatting) 
  	- [Portrait Commands](#portrait-commands) 
@@ -9,7 +18,54 @@
 - [How to use the Skeletons](#how-to-use-the-skeletons)
 
 
-# Creating a ModPack
+# Creating a Dialogue ModPack
+This information comes directly from the [Content Patcher Author Guide](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md#introduction), which is a definite must to read! 
+
+1. Install SMAPI and Content Patcher
+2. Create an Empty folder and name it [CP] TheModName, replacing TheModName with your unique mod name.
+3. Create a manifest.json file with this content:
+```
+{
+	"Name": "Your Mod Name",
+	"Author": "Your Name",
+	"Version": "1.0.0",
+	"Description": "One or two sentences about the mod.",
+	"UniqueID": "YourName.YourModName",
+	"UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}
+```
+4. Create a content.json file with this format:
+```
+{
+    "Format": "2.0.0",
+    "Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/YOURCHARACTERHERE", // Edit this here with your desired character
+					   // This target will also be changed depending on what you're editing!
+					  // See the Data Directory & Other Dialogue Locations below for more info!
+		"Entries": {
+	    		// Dialogue keys here, more information on these below
+	    	}
+    	}
+    ]
+}
+```
+
+6. Note: My skeleton is a bit more complex than this but generally follows the same structure!
+	- See: [How to use the Skeletons](#how-to-use-the-skeletons) for more information on these.
+
+
+# Dialogue Keys
+This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
+## Generic Dialogue
+## Location Dialogue
+## Special Dialogue
+## Marriage Dialogue
+## Data Directory and Other Dialogue Locations
 
 # CheatSheet
 Formatting
