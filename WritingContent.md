@@ -5,7 +5,7 @@
  	- [Portrait Commands](#portrait-commands) 
   	- [Dialogue Commands](#dialogue-commands)
    	- [Response IDs](#response-ids)
-    	- [Replacer Commands](#replacer-commands) 
+    - [Replacer Commands](#replacer-commands) 
 - [How to use the Skeletons](#how-to-use-the-skeletons)
 
 
