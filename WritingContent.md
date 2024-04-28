@@ -1,7 +1,7 @@
 # Contents
 - Creating a Modpack
 - Formatting Cheatsheet
-  	- [Formatting](Formatting) 
+  	- [Formatting](#formatting) 
  	- Portrait Commands 
   	- Dialogue Commands
    	- Response IDs
