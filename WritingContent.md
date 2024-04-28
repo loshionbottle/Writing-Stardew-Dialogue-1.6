@@ -1,5 +1,5 @@
 # Welcome to WritingContent.md 
-Author's Note: I am by no means a professional at creating dialogue. However, I have accumulated a lot of knowledge that might benefit others like myself who want to create a dialogue pack but are unsure where to start!
+Author's Note: I am by no means a professional at creating dialogue. However, I have accumulated a lot of knowledge that might benefit others like myself who want to create a dialogue pack but are unsure where to start! Please join [my discord server](https://discord.gg/WNEamREvKh) to let me know if you find any issues with this guide! 
 
 # Contents
 - [Creating a Dialogue Modpack](#creating-a-dialogue-modpack)
