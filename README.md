@@ -9,6 +9,7 @@ I'm not well versed in creating C# mods, so this is strictly a resource on creat
 - CONTENT PATCHER WIKI: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
 
 ## A quick rundown on what's included: 
+Use the branches drop down (above) to switch between each area.
 ### Code Skeletons
 Includes skeletons for marriagable and non-marriagable NPCs
 ### Writing Guide
