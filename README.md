@@ -3,7 +3,7 @@ This repository is meant for new mod authors looking for a simple guide on dialo
 
 I'm not well versed in creating C# mods, so this is strictly a resource on creating content using Content Patcher.
 
-## A quick rundown on what's included: 
+## Contents
 Use the branches drop down (above) to switch between each area or just click the links below.
 
 [Writing Guide](https://github.com/loshionbottle/Writing-Stardew-Dialogue/tree/Writing-Guide) - Takes information from both my experience and from the Stardew Dialogue WIKI and puts it all into a pretty package just for u pookie.
