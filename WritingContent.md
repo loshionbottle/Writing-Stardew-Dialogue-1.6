@@ -1,3 +1,14 @@
+# Contents
+- Creating a Modpack
+- Formatting Cheatsheet
+  	- [Formatting](Formatting) 
+ 	- Portrait Commands 
+  	- Dialogue Commands
+   	- Response IDs
+    	- Replacer Commands 
+- How to use the Skeletons
+
+
 # Creating a ModPack
 
 # CheatSheet
