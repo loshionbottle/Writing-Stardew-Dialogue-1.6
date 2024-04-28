@@ -8,5 +8,5 @@ Includes skeletons for marriagable and non-marriagable NPCs
 ### Writing Guide
 Includes a guide on how to edit these skeletons
 ### Other Resources
-OFFICIAL STARDEW DIALOGUE WIKI: https://stardewvalleywiki.com/Modding:Dialogue
-CONTENT PATCHER WIKI: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
+- OFFICIAL STARDEW DIALOGUE WIKI: https://stardewvalleywiki.com/Modding:Dialogue
+- CONTENT PATCHER WIKI: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
