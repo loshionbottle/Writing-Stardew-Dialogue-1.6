@@ -1,12 +1,12 @@
 # Contents
-- Creating a Modpack
-- Formatting Cheatsheet
+- [Creating a Modpack](#creating-a-modpack)
+- [Formatting Cheatsheet](#cheatsheet)
   	- [Formatting](#formatting) 
- 	- Portrait Commands 
-  	- Dialogue Commands
-   	- Response IDs
-    	- Replacer Commands 
-- How to use the Skeletons
+ 	- [Portrait Commands](#portrait-commands) 
+  	- [Dialogue Commands](#dialogue-commands)
+   	- [Response IDs](#response-ids)
+    	- [Replacer Commands](#replacer-commands) 
+- [How to use the Skeletons](#how-to-use-the-skeletons)
 
 
 # Creating a ModPack
