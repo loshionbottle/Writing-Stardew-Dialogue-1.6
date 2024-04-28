@@ -6,7 +6,7 @@ I'm not well versed in creating C# mods, so this is strictly a resource on creat
 ## Contents
 Use the branches drop down (above) to switch between each area or just click the links below.
 
-[Writing Guide](https://github.com/loshionbottle/Writing-Stardew-Dialogue/blob/Welcome/Writing%20Content) - Takes information from both my experience and from the Stardew Dialogue WIKI and puts it all into a pretty package just for u pookie.
+[Writing Guide](https://github.com/loshionbottle/Writing-Stardew-Dialogue/blob/Welcome/WritingContent.md) - Takes information from both my experience and from the Stardew Dialogue WIKI and puts it all into a pretty package just for u pookie.
 
 [Code Skeletons] - Skeletons for both Non-Marriagable and Marriagable NPCs. Designed with Beginners in mind, so there's a lot of inlines to delete. 
 
