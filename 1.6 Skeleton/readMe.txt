@@ -9,7 +9,7 @@ Important Links
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Stardew Valley Wiki Modding:Dialogue section: https://stardewcommunitywiki.com/Modding:Dialogue
 ContentPatcher Wiki: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
-More Indepth Guide to Writing Dialogue written by yours truly: 
+More Indepth Guide to Writing Dialogue written by yours truly: https://github.com/loshionbottle/Writing-Stardew-Dialogue-1.6
 
 Short but Simple Guide to the Modpack:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
