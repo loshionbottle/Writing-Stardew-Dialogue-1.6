@@ -1,0 +1,32 @@
+// Gift Dialogue 
+// ctrl + F EDITNAMEHERE to find all the places u need to edit the name
+
+{
+    "Changes": [
+        // Unmarried/Not Dating/Not Engaged
+        {
+            "LogName": "Basic Gift Dialogue", 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/EDITNAMEHERE", 
+            "Entries": {
+                "AcceptGift_(O)100": "", // Be sure to take out the "100" and replace it with the actual item's ID
+                "AcceptBirthdayGift_Positive": "", // Check out the WIKI link in the CheatSheet.txt for more info
+                "AcceptBirthdayGift_Negative": "" // With 1.6, there were a lot more keys added, so I'd check out the changelog as well. 
+            }
+        },
+        // Dating, Engaged, Married
+        {
+            "LogName": "Engaged & Marriage Gift Dialogue", 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/EDITNAMEHERE", 
+            "When": {
+                "Relationship:Sam": "Dating, Engaged, Married"
+            },
+            "Entries": {
+                "AcceptGift_(O)100": "",
+                "AcceptBirthdayGift_Positive": "",
+                "AcceptBirthdayGift_Negative": ""
+            }
+        }
+    ]
+}
