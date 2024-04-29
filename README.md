@@ -8,7 +8,7 @@ Use the branches drop down (above) to switch between each area or just click the
 
 [Writing Guide](https://github.com/loshionbottle/Writing-Stardew-Dialogue/blob/Welcome/WritingContent.md) - Takes information from both my experience and from the Stardew Dialogue WIKI and puts it all into a pretty package just for u pookie.
 
-[Code Skeletons] - Skeletons for both Non-Marriagable and Marriagable NPCs. Designed with Beginners in mind, so there's a lot of inlines to delete. 
+[Code Skeletons](https://github.com/loshionbottle/Writing-Stardew-Dialogue-1.6/tree/Welcome/1.6%20Skeleton) - Skeletons for both Non-Marriagable and Marriagable NPCs. Designed with Beginners in mind, so there's a lot of inlines to delete. 
 
 
 *All Resources here are FREE to use and should stay that way. I do not intend for myself or any others to profit off of this.*
