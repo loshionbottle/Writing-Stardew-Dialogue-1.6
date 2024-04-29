@@ -214,6 +214,7 @@ After Special Dialogue, the game will check for variants in this order:
 
 ## Special and Other Dialogue
 This dialogue is given precedence over Location & Generic Dialogue. Includes the new 1.6 keys. 
+NOTE: Will be updating this list with descriptions and examples when I gain motivation
 
 ### Location and Event Based Keys
 ```
