@@ -501,7 +501,7 @@ Though most files have inline comments exlaining what to change, you might want 
         - This is simply a shorter version of the Stardew Valley WIKI, I would not recommend using my cheatsheet as an end all be all.
 
 ### DO EDIT: 
-    1. manifest.json 
+    1. Assets/manifest.json 
         - This should be the first thing you edit.
         - The "Name" field should be the name of YOUR pack
         - The "Author" field should be YOUR name or username
@@ -513,7 +513,7 @@ Though most files have inline comments exlaining what to change, you might want 
             - To get your own uniqueID, this forum should help: https://forums.stardewvalley.net/threads/nexus-update-key.14368/
         - "ContentPackFor" should not be changed, unless you're adding to the section
             - This Skeleton is meant for ContentPatcher
-    2. content.json
+    2. Assets/content.json
         - Includes the ConfigSchema & Includes the files for this schema right below
         - I've included prompts on where you should edit, though again, I recommend reading the ContentPatcher WIKI
         - This modpack is already setup in case you want to add more character.jsons, Character_Festival.jsons, etc. 
