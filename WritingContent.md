@@ -12,7 +12,6 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
   	   	- [Festival-Based Keys](#festival-based-keys)
   	   	- [Gift-Based keys](#gift-based-keys)
   	   	- [Romance Keys](#romance-keys)
-  	   	- [Spouse/Other NPC Events](#spouse-and-other-npc-events)
   	   	- [Conversation Topics](#conversation-topics)
   	   	- [Other Keys](#other-keys)
   	- [Marriage Dialogue](#marriage-dialogue)
