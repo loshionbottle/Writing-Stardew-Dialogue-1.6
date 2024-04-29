@@ -14,6 +14,7 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
   	   	- [Romance Keys](#romance-keys)
   	   	- [Conversation Topics](#conversation-topics)
   	   	- [Other Keys](#other-keys)
+  	   	- [Rainy Days](#rainy-days)
   	- [Marriage Dialogue](#marriage-dialogue)
 - [Formatting Cheatsheet](#cheatsheet)
   	- [Formatting](#formatting) 
@@ -332,8 +333,68 @@ pamHouseUpgrade - Set after seeing Pam house upgrade event, if player choses to 
 pamHouseUpgradeAnonymous - Set after seeing Pam house upgrade event, if player choses to remain anonymous
 willyCrabs - Set after Willy's 6 Heart Event
 ```
+#### Rainy Days
+This data is stored under Characters/Dialogue/rainy.xnb, which only include the NPC's name, and the line. This has a 50% chance of showing up if a special or location dialogue doesn't match, it's raining, and you're not married/divorced to them. 
+- Ex. "Abigail": "This edits the rainy day dialogue for Abigail"
+
+
     
 ### Marriage Dialogue
+This data is stored in a **different file** than those other keys.
+
+Non-NPC specific dialogue is stored in Characters/Dialogue/MarriageDialogue.xnb
+
+But, if you're looking to change NPC specific dialogue, then your target will look more like: Characters/Dialogue/MarriageDialogueNPCNAME
+
+## Dialogue Keys for Marriagables
+```
+<season>_<day> - shown when the day starts on the season and day
+	- Example
+		"summer_1": "This dialogue will show up on the first of summer"
+patio_<spouse> - Shown when NPC is standing on patio
+	- Example
+		"patio_Sam": "This dialogue will show up when Sam is on the patio"
+<weather>_Day_<random> - shown when the day starts, rainy if raining or indoor if their not outdoors
+	- Random is a value between 0-4 or the NPC's name, which the game randomly chooses
+Rainy_Night_<random> - shown after 6pm when it's raining
+	- Random is a value between 0-5 or the NPC's name, which the game randomly chooses
+	- Example
+		"Rainy_Night_0": "This one of 5 lines the game will choose from to show up on a rainy night" 
+Indoor_Night_<random> - Shown after 6pm when it's not raining
+	- Random is a value between 0-5 or the NPC's name, which the game randomly chooses
+funLeave_<spouse> - Shown before NPC leaves the farmhouse, typically on Monday or Fri if they have no job
+	- Example
+		"funLeave_Sam": "This will show right before Sam leaves for the day"
+jobLeave_<spouse> - Shown before NPC leaves the farmhouse for their job
+	- Only used for Maru, Penny, and Harvey
+funReturn_<spouse> - Shown after 1pm when they return to the farmhouse
+	- Only on Monday (for any NPC) or Friday (if not Maru/Penny/Harvey)
+jobReturn_<spouse> - Only if funReturn isn't shown, meant for the trio (Maru/Penny/Harvey)
+<season>_<spouse> - Shown at 9+ heart levels with 5% chance each day
+	- Example
+		- "fall_Abigail": "This has a 5% chance to show up on a Fall day for Abigail"
+Outdoor_<spouse> - Shown on the farm with 20% chance
+	- Example
+		"Outdoor_Sebastian": "This has a 20% chance to show up when Sebastian is outside"
+Outdoor_<random> - Shown on the farm with a 80% chance
+	- <random> is a value of 0-4
+spouseRoom_<spouse> - Shown when the NPC is in their room, which tends to happen a lot ngl
+	- When editing this, you might want to put a line you don't mind seeing a lot
+OneKid_<random> - Shown when NPC is standing in the kitchen & y'all have one kid
+	- <random> is a number of 0-4
+TwoKids_<random> - Like OneKid, but when y'all have two kids
+	- <random> is also a number of 0-4
+<affection>_<random> - Shown inside the farmhouse between 11am-6pm
+	- Or when the day starts & a different dialogue isn't selected.
+	- <affection> is:
+		- Randomly Bad or Neutral if hearts are less than 9,
+		- 50% Good if hearts are 10+,
+		- 87.5% Good if hearts are 11+
+		- Else Neutral
+	<random> is a value 0-9
+	- Example
+		"Good_0": "This is the first good value that could pop up"
+```
 
 # CheatSheet
 Formatting
