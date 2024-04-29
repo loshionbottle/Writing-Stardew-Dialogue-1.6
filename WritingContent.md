@@ -84,10 +84,10 @@ Go [here](characters-/-dialogue-directory) for these keys
 ```
 PurchasedItem_* which is shown by a non-child town NPC after you sell an edible item to a shop.
 Town_DumpsterDiveComment_Child which are shown when an NPC catches you rummaging through trash cans.
-	- 1.6 introduces NPC specific comments, which are included in the characters/dialogue directory keys.
 Town_DumpsterDiveComment_Teen 
 Town_DumpsterDiveComment_Adult
 Town_DumpsterDiveComment_Linus
+		- 1.6 introduces NPC specific trash comments, which are included in the characters/dialogue directory keys.
 SummitEvent_Dialogue3_<spouse>	which is shown for your spouse near the start of the perfection cutscene.
 ```
 
