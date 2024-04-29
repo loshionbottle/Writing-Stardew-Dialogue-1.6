@@ -3,12 +3,12 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
 
 # Contents
 - [Creating a Dialogue Modpack](#creating-a-dialogue-modpack)
+- [Dialogue Locations](#dialogue-locations)
 - [Dialogue Keys](#dialogue-keys)
   	- [Generic Dialogue](#generic-dialogue)
   	- [Location Dialogue](#location-dialogue)
-  	- [Special Dialogue](#special-dialogue)
+  	- [Special Dialogue](#special-and-other-dialogue)
   	- [Marriage Dialogue](#marriage-dialogue)
-  	- [Data Directory & Other Dialogue Locations](#data-directory-and-other-dialogue-locations)
 - [Formatting Cheatsheet](#cheatsheet)
   	- [Formatting](#formatting) 
  	- [Portrait Commands](#portrait-commands) 
@@ -46,7 +46,7 @@ This information comes directly from the [Content Patcher Author Guide](https://
 		"Action": "EditData",
 		"Target": "Characters/Dialogue/YOURCHARACTERHERE", // Edit this here with your desired character
 					   // This target will also be changed depending on what you're editing!
-					  // See the Data Directory & Other Dialogue Locations below for more info!
+					  // See the Dialogue Locations below for more info!
 		"Entries": {
 	    		// Dialogue keys here, more information on these below
 	    	}
@@ -58,6 +58,7 @@ This information comes directly from the [Content Patcher Author Guide](https://
 6. Note: My skeleton is a bit more complex than this but generally follows the same structure!
 	- See: [How to use the Skeletons](#how-to-use-the-skeletons) for more information on these.
 
+# Dialogue Locations
 
 # Dialogue Keys
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
@@ -80,12 +81,12 @@ After Special and Location Dialogue, the game will choose dialogue using these k
 		- Example:
 			"10": "This is dialogue which will show up on the 10th day of every month in the first year."
 
-	<dayOfMonth>_<firstOrLaterYear> - Shown on the given day of month in the first or later years
+	<dayOfMonth>_<firstOrLaterYear> - Shown on the given day of month in the first or later years 
 		- Example:
-			"2_2": "This is dialogue which will show up on the 2nd day of the month on the second year."
+			"2_2": "This is dialogue which will show up on the 2nd day of the month on the second or later years."
 
 	<dayOfWeek><hearts>_<firstOrLaterYear> - Shown on given day of week if you have AT LEAST the amount of <hearts> with them.
-			Will be checked in the order of 10, 8, 6, 4, 2 (no other values are recognized at this time)
+			Will be checked in the order of 10, 8, 6, 4, 2 (no other values are recognized at this time).
 		- Example:
 			"Mon2_2": "This is dialogue which will show up on Mondays with at least 2 hearts of the given NPC on the second year."
 
@@ -101,6 +102,8 @@ After Special and Location Dialogue, the game will choose dialogue using these k
 	<dayOfWeek> - Shown on given day of week, no matter the year
 		- Example:
 			"Mon": "This is dialogue which will show up on Mondays"
+
+NOTE: <firstOrLaterYear> ONLY ACCEPTS VALUES 1 OR 2
 ```
 
 ## Location Dialogue
@@ -127,9 +130,150 @@ After Special Dialogue, the game will check for variants in this order:
    			"Saloon": "This is dialogue that will show up when the NPC is at the Saloon"
 ```
 
-## Special Dialogue
+## Special and Other Dialogue
+This dialogue is given precedence over Location & Generic Dialogue. Includes the new 1.6 keys. 
+
+### Location/Event-Based Keys
+```
+<location>_Entry
+Resort
+Resort_Bar
+Resort_Chair
+Resort_Dance
+Resort_Entering
+Resort_Leaving
+Resort_Shore
+Resort_Towel
+Resort_Umbrella
+Resort_Wander
+MovieInvitation
+RejectMovieTicket_AlreadyInvitedBySomeoneElse
+RejectMovieTicket_AlreadyWatchedThisWeek
+RejectMovieTicket_Divorced
+RejectMovieTicket_DontWantToSeeThatMovie
+RejectMovieTicket
+GreenRain
+GreenRainFinished
+```
+### Festival-Based Keys
+```
+Fair_Judging
+Fair_Judged_PlayerLost_PurpleShorts
+Fair_Judged_PlayerLost_Skipped
+Fair_Judged_PlayerLost
+Fair_Judged_PlayerWon
+Fair_Judged
+FlowerDance_Accept_Roommate
+FlowerDance_Accept_Spouse
+FlowerDance_Accept
+FlowerDance_Decline
+WinterStar_GiveGift_Before_Roommate
+WinterStar_GiveGift_Before_Spouse
+WinterStar_GiveGift_Before
+WinterStar_GiveGift_After_Roommate
+WinterStar_GiveGift_After_Spouse
+WinterStar_GiveGift_After
+WinterStar_ReceiveGift_<id>
+WinterStar_ReceiveGift_<tag>
+WinterStar_ReceiveGift
+wonEggHunt
+```
+### Gift-Based keys
+```
+accept_<item_id>
+reject_<item_id>
+AcceptGift_<id>
+AcceptGift_<tag>
+AcceptBirthdayGift_<id>
+AcceptBirthdayGift_<tag>
+AcceptBirthdayGift_<taste>
+AcceptBirthdayGift_Negative
+AcceptBirthdayGift_Positive
+AcceptBirthdayGift
+RejectGift_Divorced
+RejectItem_<id>
+RejectItem_<tag>
+```
+### Romance Keys
+Not to get confused with Marriage Dialogue, which is held in a different .xnb file. 
+```
+breakUp
+divorced
+dumped_<Girls/Guys>
+secondChance_<Girls/Guys>
+AcceptBouquet
+RejectBouquet_Divorced
+RejectBouquet_NotDatable
+RejectBouquet_NpcAlreadyMarried
+RejectBouquet_VeryLowHearts
+RejectBouquet_LowHearts
+RejectBouquet
+RejectMermaidPendant_Divorced
+RejectMermaidPendant_NeedHouseUpgrade
+RejectMermaidPendant_NotDatable
+RejectMermaidPendant_NpcWithSomeoneElse
+RejectMermaidPendant_PlayerWithSomeoneElse
+RejectMermaidPendant_Under8Hearts
+RejectMermaidPendant_Under10Hearts
+RejectMermaidPendant_Under10Hearts_AskedAgain
+RejectMermaidPendant
+dating_<dateableNPC>
+married_<spouseName>
+SpouseFarmhouseClutter
+SpouseGiftJealous
+Spouse_MonstersInHouse
+SpouseStardrop
+```
+### Spouse/Other NPC Events
+```
+elliottGone - Set when Elliott's fourteen-heart event starts.
+ElliottGone1 - Part of Elliott's fourteen-heart event. The first flag is set when it starts; the subsequent flags are set by subsequent letters from Elliott.
+ElliottGone2
+ElliottGone3
+ElliottGone4
+ElliottGone5
+ElliottGone6
+ElliottGone7
+emilyFiber - Part of Emily's fourteen-heart event. Set after completing the quest.
+haleyCakewalk1 - Part of Haley's fourteen-heart event.
+haleyCakewalk2
+leahPaint - Set when Leah's fourteen-heart event starts.
+pennyRedecorating - Part of Penny's fourteen-heart event.
+samJob1 - Part of Sam's fourteen-heart event.
+samJob2
+samJob3
+sebastianFrog - Set when Sebastian's fourteen-heart event starts.
+sebastianFrog2 - Part of Sebastian's fourteen-heart event.
+shaneSaloon1 - Part of Shane's fourteen-heart event.
+shaneSaloon2
+pamHouseUpgrade - Set after seeing Pam house upgrade event, if player choses to be revealed
+pamHouseUpgradeAnonymous - Set after seeing Pam house upgrade event, if player choses to remain anonymous
+willyCrabs - Set after Willy's 6 Heart Event
+```
+### Conversation Topics
+```
+cc_Begin - Set in the Wizard's cutscene after reading the first Junimo note in the community center.
+cc_Complete - Community Center completed. (Does not apply to JojaMart path.)
+cc_Boulder - Mountain boulder is removed through community center bundle or Joja improvement form.
+cc_Bridge - Quarry bridge is repaired through community center bundle or Joja improvement form.
+cc_Bus - Bus is repaired through community center bundle or Joja improvement form.
+cc_Greenhouse - Greenhouse is constructed through community center bundle. (Does not apply to JojaMart path.)
+cc_Minecart - Minecarts are unlocked through community center bundle or Joja improvement form.
+joja_Begin - First time that player opens the Joja Community Development Form.
+movieTheater - Movie Theater is constructed.
+```
+### Other Keys
+```
+DumpsterDiveComment
+HitBySlingshot
+WipedMemory
+ComeBackLater
+Snoring 
+Introduction - Farmer is Created, lasts 6 days
+FullCrabPond - First time any fish pond contains 10 crabs
+```
+    
 ## Marriage Dialogue
-## Data Directory and Other Dialogue Locations
 
 # CheatSheet
 Formatting
@@ -179,7 +323,6 @@ Dialogue Commands
 
 
 ### Question Commands
- 
 	$q <response IDs><fallback>#<text> - Basic Question format
 	$r <response ID><friendship> <reaction>#<text> - Response format
 	$p <response ID>#<match text>|<no match text> - Prerequisite text format
