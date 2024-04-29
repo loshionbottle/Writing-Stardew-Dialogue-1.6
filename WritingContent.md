@@ -12,7 +12,7 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
   	   	- [Festival-Based Keys](#festival-based-keys)
   	   	- [Gift-Based keys](#gift-based-keys)
   	   	- [Romance Keys](#romance-keys)
-  	   	- [Spouse/Other NPC Events](#spouse-and-other-npcs-events)
+  	   	- [Spouse/Other NPC Events](#spouse-and-other-npc-events)
   	   	- [Conversation Topics](#conversation-topics)
   	   	- [Other Keys](#other-keys)
   	- [Marriage Dialogue](#marriage-dialogue)
@@ -66,10 +66,19 @@ This information comes directly from the [Content Patcher Author Guide](https://
 	- See: [How to use the Skeletons](#how-to-use-the-skeletons) for more information on these.
 
 # Dialogue Locations
+Characters/Dialogue is where majority of the NPC-specific dialogue is stored
 
-# Dialogue Keys
+Data/ExtraDialogue.xnb 
+Strings/Characters.xnb
+Strings/SpeechBubbles.xnb
+Strings/StringsFromCsFiles.xnb
+
+# Characters/Dialogue Directory
+Where Majority of the NPC-Specific dialogue gets stored. 
+
+## Dialogue Keys
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
-## Generic Dialogue
+### Generic Dialogue
 [!WARNING]
 Presedence is given to Special Dialogue, then Location, then Generic.
 
@@ -113,7 +122,7 @@ After Special and Location Dialogue, the game will choose dialogue using these k
 NOTE: <firstOrLaterYear> ONLY ACCEPTS VALUES 1 OR 2
 ```
 
-## Location Dialogue
+### Location Dialogue
 [!WARNING] Precedence is given to Special Dialogue. 
 
 After Special Dialogue, the game will check for variants in this order: 
@@ -137,10 +146,10 @@ After Special Dialogue, the game will check for variants in this order:
    			"Saloon": "This is dialogue that will show up when the NPC is at the Saloon"
 ```
 
-## Special and Other Dialogue
+### Special and Other Dialogue
 This dialogue is given precedence over Location & Generic Dialogue. Includes the new 1.6 keys. 
 
-### Location and Event Based Keys
+#### Location and Event Based Keys
 ```
 <location>_Entry
 Resort
@@ -162,7 +171,7 @@ RejectMovieTicket
 GreenRain
 GreenRainFinished
 ```
-### Festival Based Keys
+#### Festival Based Keys
 ```
 Fair_Judging
 Fair_Judged_PlayerLost_PurpleShorts
@@ -185,7 +194,7 @@ WinterStar_ReceiveGift_<tag>
 WinterStar_ReceiveGift
 wonEggHunt
 ```
-### Gift Based Keys
+#### Gift Based Keys
 ```
 accept_<item_id>
 reject_<item_id>
@@ -201,7 +210,7 @@ RejectGift_Divorced
 RejectItem_<id>
 RejectItem_<tag>
 ```
-### Romance Keys
+#### Romance Keys
 Not to get confused with Marriage Dialogue, which is held in a different .xnb file. 
 ```
 breakUp
@@ -231,33 +240,7 @@ SpouseGiftJealous
 Spouse_MonstersInHouse
 SpouseStardrop
 ```
-### Spouse and Other NPC Events
-```
-elliottGone - Set when Elliott's fourteen-heart event starts.
-ElliottGone1 - Part of Elliott's fourteen-heart event. The first flag is set when it starts; the subsequent flags are set by subsequent letters from Elliott.
-ElliottGone2
-ElliottGone3
-ElliottGone4
-ElliottGone5
-ElliottGone6
-ElliottGone7
-emilyFiber - Part of Emily's fourteen-heart event. Set after completing the quest.
-haleyCakewalk1 - Part of Haley's fourteen-heart event.
-haleyCakewalk2
-leahPaint - Set when Leah's fourteen-heart event starts.
-pennyRedecorating - Part of Penny's fourteen-heart event.
-samJob1 - Part of Sam's fourteen-heart event.
-samJob2
-samJob3
-sebastianFrog - Set when Sebastian's fourteen-heart event starts.
-sebastianFrog2 - Part of Sebastian's fourteen-heart event.
-shaneSaloon1 - Part of Shane's fourteen-heart event.
-shaneSaloon2
-pamHouseUpgrade - Set after seeing Pam house upgrade event, if player choses to be revealed
-pamHouseUpgradeAnonymous - Set after seeing Pam house upgrade event, if player choses to remain anonymous
-willyCrabs - Set after Willy's 6 Heart Event
-```
-### Conversation Topics
+#### Conversation Topics
 ```
 cc_Begin - Set in the Wizard's cutscene after reading the first Junimo note in the community center.
 cc_Complete - Community Center completed. (Does not apply to JojaMart path.)
@@ -269,7 +252,7 @@ cc_Minecart - Minecarts are unlocked through community center bundle or Joja imp
 joja_Begin - First time that player opens the Joja Community Development Form.
 movieTheater - Movie Theater is constructed.
 ```
-### Other Keys
+#### Other Keys
 ```
 DumpsterDiveComment
 HitBySlingshot
@@ -278,9 +261,12 @@ ComeBackLater
 Snoring 
 Introduction - Farmer is Created, lasts 6 days
 FullCrabPond - First time any fish pond contains 10 crabs
+pamHouseUpgrade - Set after seeing Pam house upgrade event, if player choses to be revealed
+pamHouseUpgradeAnonymous - Set after seeing Pam house upgrade event, if player choses to remain anonymous
+willyCrabs - Set after Willy's 6 Heart Event
 ```
     
-## Marriage Dialogue
+### Marriage Dialogue
 
 # CheatSheet
 Formatting
