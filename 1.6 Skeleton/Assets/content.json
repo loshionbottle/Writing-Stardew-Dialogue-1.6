@@ -1,0 +1,63 @@
+{
+    "Format": "2.0.0",
+    // Config 
+    "ConfigSchema": {
+      "NotMarriedDialogue": { // DISABLES/ENABLES Character_NotMarried.json CONTENTS
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": "Disable to turn off the main not married dialogue."
+      },
+      "MarriedDialogue": { // DISABLES/ENABLES Character_Married.json CONTENTS
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": "Disable to turn off marriage dialogue."
+      },
+      "GiftDialogue": { // DISABLES/ENABLES characterGift.json CONTENTS
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": "Disable to turn off gift dialogue."
+      },
+      "FestivalDialogue": { // DISABLES/ENABLES characterFestival.json CONTENTS
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": "Disable to turn off festival dialogue."
+      }
+    },
+
+    // Include files
+    "Changes": [
+      {
+        "LogName": "Not Married Dialogue", // "LogName" is for YOU the modder, will not show up on the player's config
+        "Action": "Include",
+        "FromFile": "Assets/Dialogue/Character_NotMarried.json", // Be sure to edit this if you change the names of the FILES 
+        "When": {
+          "NotMarriedDialogue": "true" // Be sure to edit this if you change the names of the KEYS from above
+        }
+      },
+      {
+        "LogName": "Married Dialogue", 
+        "Action": "Include",
+        "FromFile": "Assets/Dialogue/Character_Married.json", 
+        "When": {
+          "MarriedDialogue": "true" 
+        }
+      },
+      {
+        "LogName": "Gift Dialogue", 
+        "Action": "Include",
+        "FromFile": "Assets/Dialogue/Character_Gift.json", 
+        "When": {
+          "GiftDialogue": "true" 
+        }
+      },
+      {
+        "LogName": "Festival Dialogue", 
+        "Action": "Include",
+        "FromFile": "Assets/Dialogue/Character_Festival.json", 
+        "When": {
+          "FestivalDialogue": "true" 
+        }
+      }
+    ]
+  }
+  
