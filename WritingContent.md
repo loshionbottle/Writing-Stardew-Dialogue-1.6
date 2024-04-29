@@ -8,11 +8,11 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
   	- [Generic Dialogue](#generic-dialogue)
   	- [Location Dialogue](#location-dialogue)
   	- [Special Dialogue](#special-and-other-dialogue)
-  		- [Location/Event-Based Keys](#location/event-based-keys)
+  		- [Location/Event-Based Keys](#location-and-event-based-keys)
   	   	- [Festival-Based Keys](#festival-based-keys)
   	   	- [Gift-Based keys](#gift-based-keys)
   	   	- [Romance Keys](#romance-keys)
-  	   	- [Spouse/Other NPC Events](#spouse/other-npcs-events)
+  	   	- [Spouse/Other NPC Events](#spouse-and-other-npcs-events)
   	   	- [Conversation Topics](#conversation-topics)
   	   	- [Other Keys](#other-keys)
   	- [Marriage Dialogue](#marriage-dialogue)
@@ -140,7 +140,7 @@ After Special Dialogue, the game will check for variants in this order:
 ## Special and Other Dialogue
 This dialogue is given precedence over Location & Generic Dialogue. Includes the new 1.6 keys. 
 
-### Location/Event-Based Keys
+### Location and Event Based Keys
 ```
 <location>_Entry
 Resort
@@ -162,7 +162,7 @@ RejectMovieTicket
 GreenRain
 GreenRainFinished
 ```
-### Festival-Based Keys
+### Festival Based Keys
 ```
 Fair_Judging
 Fair_Judged_PlayerLost_PurpleShorts
@@ -185,7 +185,7 @@ WinterStar_ReceiveGift_<tag>
 WinterStar_ReceiveGift
 wonEggHunt
 ```
-### Gift-Based Keys
+### Gift Based Keys
 ```
 accept_<item_id>
 reject_<item_id>
@@ -231,7 +231,7 @@ SpouseGiftJealous
 Spouse_MonstersInHouse
 SpouseStardrop
 ```
-### Spouse/Other NPC Events
+### Spouse and Other NPC Events
 ```
 elliottGone - Set when Elliott's fourteen-heart event starts.
 ElliottGone1 - Part of Elliott's fourteen-heart event. The first flag is set when it starts; the subsequent flags are set by subsequent letters from Elliott.
