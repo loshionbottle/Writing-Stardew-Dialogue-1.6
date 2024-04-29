@@ -82,13 +82,13 @@ Go [here](characters-/-dialogue-directory) for these keys
 
 - Some examples of keys in this file include:
 ```
-"PurchasedItem_*" which is shown by a non-child town NPC after you sell an edible item to a shop.
-"Town_DumpsterDiveComment_Child" which are shown when an NPC catches you rummaging through trash cans.
-"Town_DumpsterDiveComment_Teen"
-"Town_DumpsterDiveComment_Adult"
-"Town_DumpsterDiveComment_Linus"
+"PurchasedItem_* which is shown by a non-child town NPC after you sell an edible item to a shop.
+Town_DumpsterDiveComment_Child which are shown when an NPC catches you rummaging through trash cans.
+Town_DumpsterDiveComment_Teen
+Town_DumpsterDiveComment_Adult
+Town_DumpsterDiveComment_Linus
 		- 1.6 introduces NPC specific trash comments, which are included in the characters/dialogue directory keys.
-"SummitEvent_Dialogue3_<spouse>"	which is shown for your spouse near the start of the perfection cutscene.
+SummitEvent_Dialogue3_<spouse>	which is shown for your spouse near the start of the perfection cutscene.
 ```
 
 
@@ -106,14 +106,14 @@ Go [here](characters-/-dialogue-directory) for these keys
 
 - Some examples of keys in this file include:
 ```
-"MovieInvite_Spouse_<NPC name>" which is shown when the NPC married to you accepts a movie ticket
-"MovieInvite_Invited_<NPC name>" which are shown when the NPC accepts a movie ticket.
-"MovieInvite_Invited_<manner>"
-"MovieInvite_Invited_<socialAnxiety>"
-"MovieInvite_Invited_<optimism>"
-"MovieInvite_Invited_<age>"
-"MovieInvite_Invited"
-"Phone_*" which is shown when calling a shop owner on the telephone
+MovieInvite_Spouse_<NPC name> which is shown when the NPC married to you accepts a movie ticket
+MovieInvite_Invited_<NPC name> which are shown when the NPC accepts a movie ticket.
+MovieInvite_Invited_<manner>
+MovieInvite_Invited_<socialAnxiety>
+MovieInvite_Invited_<optimism>
+MovieInvite_Invited_<age>
+MovieInvite_Invited
+Phone_* which is shown when calling a shop owner on the telephone
 ```
 
 
@@ -132,9 +132,9 @@ Go [here](characters-/-dialogue-directory) for these keys
 
 - Some examples of keys in this file include:
 ```
-"<NPC name>_AfterWedding" shown after marrying an NPC when you talk to them on the farm on the same day
-"<NPC name>_Engaged" which is shown after the NPC accepts an engagement item
-"<NPC name>_EngagedRoommate"
+<NPC name>_AfterWedding shown after marrying an NPC when you talk to them on the farm on the same day
+<NPC name>_Engaged which is shown after the NPC accepts an engagement item
+<NPC name>_EngagedRoommate
 ```
 
  
