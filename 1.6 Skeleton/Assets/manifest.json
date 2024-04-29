@@ -1,0 +1,18 @@
+// This is MY manifest, if you end up using this skeleton to write your own dialogue,
+// be sure to edit pretty much everything here except the "ContentPackFor" section; which you can only add to.
+// This skeleton is meant to be used with ContentPatcher and doesn't have any other dependencies
+// Though it does support generic mod config menu, but you don't need a "ContentPackFor" section for that
+
+{
+    "Name": "Loshion's Dialogue Skeleton",
+    "Author": "loshionbottle",
+    "Description": "A 1.6 Dialogue Framework that supports over 400 lines, config menu, etc.",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.dialogueskeleton",
+    "UpdateKeys": [ 
+        //update key here
+    ],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+  }
