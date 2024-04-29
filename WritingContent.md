@@ -139,12 +139,12 @@ Phone_* which is shown when calling a shop owner on the telephone
 ```
 
  
-## Dialogue Keys
+# Dialogue Keys
 This is for data directly under **Characters/Dialogue**
 
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
 
-### Generic Dialogue
+## Generic Dialogue
 [!WARNING]
 Presedence is given to Special Dialogue, then Location, then Generic.
 
@@ -188,7 +188,7 @@ After Special and Location Dialogue, the game will choose dialogue using these k
 NOTE: <firstOrLaterYear> ONLY ACCEPTS VALUES 1 OR 2
 ```
 
-### Location Dialogue
+## Location Dialogue
 [!WARNING] Precedence is given to Special Dialogue. 
 
 After Special Dialogue, the game will check for variants in this order: 
@@ -212,10 +212,10 @@ After Special Dialogue, the game will check for variants in this order:
    			"Saloon": "This is dialogue that will show up when the NPC is at the Saloon"
 ```
 
-### Special and Other Dialogue
+## Special and Other Dialogue
 This dialogue is given precedence over Location & Generic Dialogue. Includes the new 1.6 keys. 
 
-#### Location and Event Based Keys
+### Location and Event Based Keys
 ```
 <location>_Entry
 Resort
@@ -237,7 +237,7 @@ RejectMovieTicket
 GreenRain
 GreenRainFinished
 ```
-#### Festival Based Keys
+### Festival Based Keys
 ```
 Fair_Judging
 Fair_Judged_PlayerLost_PurpleShorts
@@ -260,7 +260,7 @@ WinterStar_ReceiveGift_<tag>
 WinterStar_ReceiveGift
 wonEggHunt
 ```
-#### Gift Based Keys
+### Gift Based Keys
 ```
 accept_<item_id>
 reject_<item_id>
@@ -276,7 +276,7 @@ RejectGift_Divorced
 RejectItem_<id>
 RejectItem_<tag>
 ```
-#### Romance Keys
+### Romance Keys
 Not to get confused with Marriage Dialogue, which is held in a different .xnb file. 
 ```
 breakUp
@@ -308,7 +308,7 @@ SpouseGiftJealous
 Spouse_MonstersInHouse
 SpouseStardrop
 ```
-#### Conversation Topics
+### Conversation Topics
 ```
 cc_Begin - Set in the Wizard's cutscene after reading the first Junimo note in the community center.
 cc_Complete - Community Center completed. (Does not apply to JojaMart path.)
@@ -320,7 +320,7 @@ cc_Minecart - Minecarts are unlocked through community center bundle or Joja imp
 joja_Begin - First time that player opens the Joja Community Development Form.
 movieTheater - Movie Theater is constructed.
 ```
-#### Other Keys
+### Other Keys
 ```
 DumpsterDiveComment
 HitBySlingshot
@@ -333,20 +333,20 @@ pamHouseUpgrade - Set after seeing Pam house upgrade event, if player choses to 
 pamHouseUpgradeAnonymous - Set after seeing Pam house upgrade event, if player choses to remain anonymous
 willyCrabs - Set after Willy's 6 Heart Event
 ```
-#### Rainy Days
+### Rainy Days
 This data is stored under Characters/Dialogue/rainy.xnb, which only include the NPC's name, and the line. This has a 50% chance of showing up if a special or location dialogue doesn't match, it's raining, and you're not married/divorced to them. 
 - Ex. "Abigail": "This edits the rainy day dialogue for Abigail"
 
 
     
-### Marriage Dialogue
+## Marriage Dialogue
 This data is stored in a **different file** than those other keys.
 
 Non-NPC specific dialogue is stored in Characters/Dialogue/MarriageDialogue.xnb
 
 But, if you're looking to change NPC specific dialogue, then your target will look more like: Characters/Dialogue/MarriageDialogueNPCNAME
 
-## Dialogue Keys for Marriagables
+### Marriage Keys
 ```
 <season>_<day> - shown when the day starts on the season and day
 	- Example
