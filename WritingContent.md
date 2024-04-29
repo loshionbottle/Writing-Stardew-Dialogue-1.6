@@ -62,6 +62,47 @@ This information comes directly from the [Content Patcher Author Guide](https://
 # Dialogue Keys
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
 ## Generic Dialogue
+[WARNING]
+Presedence is given to Special Dialogue, then Location, then Generic.
+
+After Special and Location Dialogue, the game will choose dialogue using these key formats (in precendence order):
+```
+1. <season>_<key>_inlaw_<spouse>
+	- Ex. "Spring_Mon_inlaw_Sam": "This is dialogue that will show up for any NPC reguardless if they're related to Sam on Mondays in Spring"
+2. <season>_<key>
+	- Ex. "Spring_Mon": "This is dialogue that will show up on Spring Mondays."
+3. <key>_inlaw_<spouse>
+	- Ex. "Mon_inlaw_Sam": "This is dialogue that will show up for any NPC regardless if they're related to Sam on Mondays"
+4. <key>
+   	These are shown below with their respective formats. 
+
+	<dayOfMonth> - Shown on the given day of month in the FIRST YEAR ONLY
+		- Example:
+			"10": "This is dialogue which will show up on the 10th day of every month in the first year."
+
+	<dayOfMonth>_<firstOrLaterYear> - Shown on the given day of month in the first or later years
+		- Example:
+			"2_2": "This is dialogue which will show up on the 2nd day of the month on the second year."
+
+	<dayOfWeek><hearts>_<firstOrLaterYear> - Shown on given day of week if you have AT LEAST the amount of <hearts> with them.
+			Will be checked in the order of 10, 8, 6, 4, 2 (no other values are recognized at this time)
+		- Example:
+			"Mon2_2": "This is dialogue which will show up on Mondays with at least 2 hearts of the given NPC on the second year."
+
+	<dayOfWeek><hearts> - Shown on the day of week if you have at least the amount of <hearts> with them.
+			Checked in the same order as above.
+		- Example:
+			"Mon2": "This is dialogue which will show up on Mondays with at least 2 hearts of the given NPC."
+
+	<dayOfWeek>_<firstorLaterYear> - Shown on the given day of week in the first or later year
+		- Example:
+			"Mon_2": "This is dialogue which will show up on Mondays on the second year"
+
+	<dayOfWeek> - Shown on given day of week, no matter the year
+		- Example:
+			"Mon": "This is dialogue which will show up on Mondays"
+```
+
 ## Location Dialogue
 ## Special Dialogue
 ## Marriage Dialogue
