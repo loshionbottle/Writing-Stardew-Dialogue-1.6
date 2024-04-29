@@ -139,8 +139,10 @@ Phone_* which is shown when calling a shop owner on the telephone
 
  
 ## Dialogue Keys
-This information is for data directly under **Characters/Dialogue**
+This is for data directly under **Characters/Dialogue**
+
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
+
 ### Generic Dialogue
 [!WARNING]
 Presedence is given to Special Dialogue, then Location, then Generic.
