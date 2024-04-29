@@ -214,8 +214,10 @@ Not to get confused with Marriage Dialogue, which is held in a different .xnb fi
 ```
 breakUp
 divorced
-dumped_<Girls/Guys>
-secondChance_<Girls/Guys>
+dumped_Girls
+dumped_Guys
+secondChance_Girls
+secondChange_Guys
 AcceptBouquet
 RejectBouquet_Divorced
 RejectBouquet_NotDatable
