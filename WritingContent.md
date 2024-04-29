@@ -50,7 +50,7 @@ This information comes directly from the [Content Patcher Author Guide](https://
     "Changes": [
 	{
 		"Action": "EditData",
-		"Target": "Characters/Dialogue/YOURCHARACTERHERE", // Edit this here with your desired character
+		"Target": "Characters/Dialogue/<NPCname>", // Edit this here with your desired character
 					   // This target will also be changed depending on what you're editing!
 					  // See the Dialogue Locations below for more info!
 		"Entries": {
@@ -65,17 +65,81 @@ This information comes directly from the [Content Patcher Author Guide](https://
 	- See: [How to use the Skeletons](#how-to-use-the-skeletons) for more information on these.
 
 # Dialogue Locations
-Characters/Dialogue is where majority of the NPC-specific dialogue is stored
+This information comes directly from the [Stardew Wiki](https://stardewvalleywiki.com/Modding:Dialogue)
 
-Data/ExtraDialogue.xnb 
-Strings/Characters.xnb
-Strings/SpeechBubbles.xnb
-Strings/StringsFromCsFiles.xnb
+**Characters\Dialogue** is where majority of the NPC-specific dialogue is stored
+- When editing, your target should look like this:
+ 
+``` "Target": "Characters/Dialogue/<NPCname>", // Obviously editing <NPCname> to your desired character```
 
-# Characters/Dialogue Directory
-Where Majority of the NPC-Specific dialogue gets stored. 
+Go [here](characters-/-dialogue-directory) for these keys
 
+
+**Data\ExtraDialogue.xnb** holds like it says, extra dialogue
+- When editing, your target should look like this:
+
+``` "Target": "Data/ExtraDialogue.xnb"```
+
+- Some examples of keys in this file include:
+```
+PurchasedItem_* which is shown by a non-child town NPC after you sell an edible item to a shop.
+Town_DumpsterDiveComment_Child which are shown when an NPC catches you rummaging through trash cans.
+	- 1.6 introduces NPC specific comments, which are included in the characters/dialogue directory keys.
+Town_DumpsterDiveComment_Teen 
+Town_DumpsterDiveComment_Adult
+Town_DumpsterDiveComment_Linus
+SummitEvent_Dialogue3_<spouse>	which is shown for your spouse near the start of the perfection cutscene.
+```
+
+
+
+**Data\EngagementDialogue.xnb** contains entries in the form of <NPCYOUAREMARRYING>0 and <NPCYOUAREMARRYING>1
+- When editing, your target should look like this:
+  
+``` "Target": "Data/EngagementDialogue.xnb"```
+
+
+**Strings\Characters.xnb** contains more misc dialogue 
+- When editing, your target should look like this:
+
+``` "Target": "Strings/Characters.xnb"```
+
+- Some examples of keys in this file include:
+```
+MovieInvite_Spouse_<NPC name> which is shown when the NPC married to you accepts a movie ticket
+MovieInvite_Invited_<NPC name> which are shown when the NPC accepts a movie ticket.
+MovieInvite_Invited_<manner>
+MovieInvite_Invited_<socialAnxiety>
+MovieInvite_Invited_<optimism>
+MovieInvite_Invited_<age>
+MovieInvite_Invited
+Phone_* which is shown when calling a shop owner on the telephone
+```
+
+
+
+**Strings\SpeechBubbles.xnb** contains dialogue spoken through speech bubbles when the player enters a given location
+- Not to be confused with the <location>_Entry token, which is triggered when the NPC enters a location
+- When editing, your target should look like this:
+
+``` "Target": "Strings/SpeechBubbles.xnb"```
+
+
+**Strings\StringsFromCsFiles.xnb** contains more misc dialogue 
+- When editing, your target should look like this:
+  
+``` "Target": "Strings/StringsFromCSFiles.xnb"```
+
+- Some examples of keys in this file include:
+```
+<NPC name>_AfterWedding shown after marrying an NPC when you talk to them on the farm on the same day
+<NPC name>_Engaged which is shown after the NPC accepts an engagement item
+<NPC name>_EngagedRoommate
+```
+
+ 
 ## Dialogue Keys
+This information is for data directly under **Characters/Dialogue**
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
 ### Generic Dialogue
 [!WARNING]
