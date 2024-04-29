@@ -62,7 +62,7 @@ This information comes directly from the [Content Patcher Author Guide](https://
 # Dialogue Keys
 This information comes directly from the [Stardew Valley WIKI](https://stardewvalleywiki.com/Modding:Dialogue), but I've also added in 1.6 Dialogue for your ease of viewing :)
 ## Generic Dialogue
-[WARNING]
+[!WARNING]
 Presedence is given to Special Dialogue, then Location, then Generic.
 
 After Special and Location Dialogue, the game will choose dialogue using these key formats (in precendence order):
@@ -104,6 +104,29 @@ After Special and Location Dialogue, the game will choose dialogue using these k
 ```
 
 ## Location Dialogue
+[!WARNING] Precedence is given to Special Dialogue. 
+
+After Special Dialogue, the game will check for variants in this order: 
+```
+1. <season><key>
+	Ex. "springMountain": "This is dialogue that will show up when the NPC is in the Mountain and the season is Spring"
+2. <key> 
+   	These are shown below with their respective formats. 
+
+ 	<location>_<x>_<y> - Shown when the NPC is standing in the location at the exact position (x,y)
+		- Example:
+   			"Mountain_47_23": "This is dialogue that will show up when the NPC is at position (47,23) in the Mountains"
+	<location>_<dayOfWeek> - Shown at the location on the day of the week
+		- Example: 
+			"Saloon_Fri": "This is dialogue that will show up when the NPC is at the Saloon on Fridays"
+	<location><hearts> - Shown in the location if you have at least <hearts> with them
+		- Example:
+   			"Saloon8": "This is dialogue that will show up when the NPC is at the Saloon and you have 8 hearts with them"
+	<location> - Shown at that location
+		- Example:
+   			"Saloon": "This is dialogue that will show up when the NPC is at the Saloon"
+```
+
 ## Special Dialogue
 ## Marriage Dialogue
 ## Data Directory and Other Dialogue Locations
