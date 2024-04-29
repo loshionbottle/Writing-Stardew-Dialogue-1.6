@@ -1,0 +1,278 @@
+// Festival Dialogue 
+// ctrl + f EDITNAMEHERE to find all the places u need to edit the name
+
+{
+    "Changes": [
+        //Egg Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3, 4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        },
+        //Flower Dance
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        },
+        //Desert Festival
+        {
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings.xnb",
+            "Entries": {
+                "DesertFestival_EDITNAMEHERE_marriage": "",
+                "DesertFestival_EDITNAMEHERE": "",
+                "Shop_EDITNAMEHERE": ""
+            }
+        },
+        //LUAU
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        },
+        //Moonlight Jellies
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3, 4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        //Fall Fair
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3, 4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        },
+        //Spirit's Eve
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3, 4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        //Ice Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8.xnb",
+            "When": {
+                "Language": "en",
+                "Hearts:EDITNAMEHERE": "0, 1, 2, 3, 4, 5, 6, 7, 8"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        },
+        //Winter Feast
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Dating"
+            },
+            "Entries": {
+                "EDITNAMEHERE": ""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25.xnb",
+            "When": {
+                "Language": "en",
+                "Relationship:EDITNAMEHERE": "Married"
+            },
+            "Entries": {
+                "EDITNAMEHERE_spouse": ""
+            }
+        }
+    ]
+}
