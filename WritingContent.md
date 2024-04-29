@@ -8,6 +8,13 @@ Author's Note: I am by no means a professional at creating dialogue. However, I 
   	- [Generic Dialogue](#generic-dialogue)
   	- [Location Dialogue](#location-dialogue)
   	- [Special Dialogue](#special-and-other-dialogue)
+  		- [Location/Event-Based Keys](#location/event-based-keys)
+  	   	- [Festival-Based Keys](#festival-based-keys)
+  	   	- [Gift-Based keys](#gift-based-keys)
+  	   	- [Romance Keys](#romance-keys)
+  	   	- [Spouse/Other NPC Events](#spouse/other-npcs-events)
+  	   	- [Conversation Topics](#conversation-topics)
+  	   	- [Other Keys](#other-keys)
   	- [Marriage Dialogue](#marriage-dialogue)
 - [Formatting Cheatsheet](#cheatsheet)
   	- [Formatting](#formatting) 
@@ -178,7 +185,7 @@ WinterStar_ReceiveGift_<tag>
 WinterStar_ReceiveGift
 wonEggHunt
 ```
-### Gift-Based keys
+### Gift-Based Keys
 ```
 accept_<item_id>
 reject_<item_id>
